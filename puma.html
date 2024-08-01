@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="puma.css">
+</head>
+<body>
+    <nav id="title">
+    <img class="flip" src="logo.png">
+    <input type="text" id="search" placeholder="Search for Product,Brand and More">
+    
+    <button id="lo"><img src="login pic.jpg">login</button>
+    <button id="ad"><img src="add.png">cart</button>
+    <button class="home" ><img src="home.png">Become a seller</button>
+    <button >:</button>
+    </nav>
+    <hr>
+
+
+
+    <div class="slideshow">
+        <div class="show-container">
+            <div class="mySlides">
+              <img class="simg" src="shoe 1.png" alt="Slide 1">
+            </div>
+          
+            <div class="mySlides">
+              <img class="simg" src="shoe 2.png" alt="Slide 2">
+            </div>
+          
+            
+            <div class="mySlides">
+              <img class="simg" src="shoe3.png" alt="Slide 1">
+            </div>
+          
+            <div class="mySlides">
+              <img class="simg" src="shoe4.png" alt="Slide 2">
+            </div>
+          
+            <div class="mySlides">
+              <img class="simg" src="shoe5.png" alt="Slide 3">
+            </div>
+            <div class="mySlides">
+                <img class="simg" src="shoe6.png" alt="Slide 3">
+              </div>
+        </div>
+        <button class="cart">ADD TO CART</button>
+        <button class="buy"> BUY NOW</button>
+    </div>
+
+       <div id="details">
+        <h3>PUMA</p>
+        <h4>Puma Rungryp Sneakers For Men(white)</h4>
+        <h5>Special Price</h5>
+        <h6>$50 <nav class="small">$70</nav><nav class="green">63% off</nav></h6><br>
+
+
+        <h2><nav class="rating">4.2</nav> 923 ratings and 75 reviews</h2>
+        <p>Available offers</p>
+        <h6 class="y"><nav class="dot"></nav> <nav class="b">Bank Offer</nav>  Get ₹50 instant discount on first Flipkart UPI txn on order of ₹200 and aboveT&C</h6>
+        <h6 class="y" ><nav class="dot"></nav><nav class="b"> Bank Offer</nav>  5% Cashback on Flipkart Axis Bank CardT&C </h6>
+        <h6 class="y"><nav class="dot"></nav><nav class="b">Bank Offer</nav>  6% off up to ₹2000 on HDFC Bank Credit Card EMI Txns, Tenure: 6month and above, Min Txn Value: ₹7500T&C</h6>
+        </div>
+
+
+        <script>
+            var slideIndex = 0;
+         showSlides();
+       
+         function showSlides() {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {slideIndex = 1}
+           slides[slideIndex-1].style.display = "block";
+           setTimeout(showSlides, 5000); 
+         }
+       </script>
+      </body>
+      </html>
